@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  background: rgb(3, 125, 1);
+  --width: 800px;
+  height: 800px;
+}
+.item {
+  background: #81c368;
+  margin: 20px;
+  width: 400px;
+  height: 100px;
+  --flex-grow: 1;
+}
+.item1 {
+  background: red;
+  --order: 1; /*if not set it is 0*/
+  --flex-grow: 1;
+  flex-shrink: 1;
+}
+.item2 {
+  background: green;
+  --order: 2;
+  --flex-grow: 2;
+  flex-shrink: 2;
+}
+.item3 {
+  background: blue;
+  --flex-grow: 3;
+  flex-shrink: 3;
+}
